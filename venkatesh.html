@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form</title>
+  <link rel="stylesheet" href="styles.css">
+
+/* Basic styling for the form container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styling */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Placeholder color for input and textarea */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  label, input, textarea, button {
+    font-size: 14px;
+  }
+}
+
+
+  <div class="form-container">
+    <form>
+      <h2>Contact Us</h2>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
